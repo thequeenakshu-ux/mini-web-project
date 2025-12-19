@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+body.dark .container {
+    background-color: #1e1e1e;
+}
+
+body.dark .skills li {
+    background-color: #2a2a2a;
+    color: #90caf9;
+}
+
+/* Toggle Button */
+.toggle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Card */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.role {
+    color: #666;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 28px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #1a73e8;
+    color: white;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #1558b0;
+}
+
+.btn.secondary {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
